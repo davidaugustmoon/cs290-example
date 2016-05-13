@@ -15,7 +15,6 @@ app.get('/other-page',function(req,res){
   res.render('other-page');
 });
 
-
 function genContext(){
   var stuffToDisplay = {};
   stuffToDisplay.time = (new Date(Date.now())).toLocaleTimeString('en-US');
@@ -24,6 +23,16 @@ function genContext(){
 
 app.get('/time',function(req,res){
   res.render('time', genContext());
+});
+
+function genRandomNumber(){
+	var rNumber = {};
+  rNumber.value = Math.floor(Math.random() * 101).toString();
+	return rNumber;
+}
+
+app.get('/random', function(req,res){
+	res.render('random', genRandomNumber());
 });
 
 app.use(function(req,res){

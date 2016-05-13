@@ -14,6 +14,16 @@ app.get('/other-page',function(req,res){
   res.send('Welcome to the other page!');
 });
 
+function genRandomNumber(){
+  var rNumber = Math.floor(Math.random() * 101);
+  return rNumber.toString();
+}
+
+app.get('/random', function(req, res){
+  res.type('text/plain');
+  res.send('This is your random number: ' + genRandomNumber());
+});
+
 app.use(function(req,res){
   res.type('text/plain');
   res.status(404);
