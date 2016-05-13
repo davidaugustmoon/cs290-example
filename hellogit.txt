@@ -1,3 +1,0 @@
-This is a test file to add to an existing repository.
-
-This file was successfully added to the master branch cs290-example
