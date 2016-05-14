@@ -1,5 +1,7 @@
 
 var express = require('express');
+var ip = '52.37.219.116';
+//var ip = 'localhost';
 
 var app = express();
 var handlebars = require('express-handlebars').create({defaultLayout:'main'});
@@ -52,5 +54,5 @@ app.use(function(err, req, res, next){
 
 //server start
 app.listen(app.get('port'), function(){
-  console.log('Express started on http://localhost:' + app.get('port') + '; press Ctrl-C to terminate.');
+  console.log('Express started on ' + ip + ':' + app.get('port') + '; press Ctrl-C to terminate.');
 });
