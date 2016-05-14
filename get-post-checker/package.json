@@ -1,5 +1,5 @@
 {
-  "name": "Get-Post Checker",
+  "name": "get-post",
   "version": "1.0.0",
   "description": "Get-Post Checker assignment for cs290 using express and node.js",
   "main": "get-post-checker.js",
