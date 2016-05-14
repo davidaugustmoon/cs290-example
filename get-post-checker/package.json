@@ -1,13 +1,13 @@
 {
-  "name": "hello-world",
+  "name": "Get-Post Checker",
   "version": "1.0.0",
-  "description": "Hello world with express and node.js",
-  "main": "app.js",
+  "description": "Get-Post Checker assignment for cs290 using express and node.js",
+  "main": "get-post-checker.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "OSU",
-  "license": "ISC",
+  "author": "David Moon",
+  "license": "none",
   "dependencies": {
     "body-parser": "^1.13.3",
     "express": "^4.13.2",
